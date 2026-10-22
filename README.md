@@ -7,10 +7,10 @@ My Claude Code setup — skills, plugins, MCP servers, agents, slash commands, s
 Requirements: [Claude Code](https://claude.com/claude-code), [Node.js](https://nodejs.org), git. On Windows, use WSL or Git Bash.
 
 ```bash
-git clone <REPO_URL> ~/claude-setup && bash ~/claude-setup/setup.sh
+git clone https://github.com/8RockStar8/claude-setup.git ~/claude-setup && bash ~/claude-setup/setup.sh
 ```
 
-Then open a new terminal and restart Claude Code. From now on just run:
+The repo is public, so no GitHub login is needed to install. Then open a new terminal and restart Claude Code. From now on just run:
 
 ```bash
 claude-setup
@@ -48,3 +48,9 @@ It's safe to run any time: installed things are skipped, and `CLAUDE.md` / `sett
 ## Adding things
 
 Ask Claude to add a skill, agent, MCP server, plugin or setting "globally". It records it here, applies it, commits and pushes (see `config/skills/claude-setup/SKILL.md`). On other PCs, run `claude-setup` to get it.
+
+Pushing needs GitHub access. To push from a PC that installed over HTTPS, add its SSH key to GitHub, then:
+
+```bash
+git -C ~/claude-setup remote set-url origin git@github.com:8RockStar8/claude-setup.git
+```
