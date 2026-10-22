@@ -37,10 +37,10 @@ When the user asks to add or change anything global, keep the repo in sync — t
    - MCP secrets: never write real keys in `mcp.json`. Use `"${ENV_VAR}"` placeholders and tell the user which env var to export before running setup.
    - Settings: put only portable settings in `config/settings.json` — no machine paths, no secrets.
 2. **Apply it**: `bash ~/claude-setup/setup.sh --no-pull`. Check the output shows it installed (✔) or skipped as already present (·), with no ✘.
-3. **Commit** the repo using the `git-commit` skill style, e.g. `Feat: add senior-devops skill`, `Feat: add sentry mcp server`, `Chore: enable dark theme`.
-4. **Rebuild the zip**: `bash ~/claude-setup/pack.sh` → `~/claude-setup/claude-setup.zip` (git-ignored; unpacks into a `claude-setup/` folder). This is what the user shares or pushes to their own repo.
+3. **Rebuild the zip**: `bash ~/claude-setup/pack.sh`. It stages all changes and builds `~/claude-setup/claude-setup.zip` from them (unpacks into a `claude-setup/` folder), staging the zip too. This is what the user shares or pushes to their own repo.
+4. **Commit** (change + zip together) using the `git-commit` skill style, e.g. `Feat: add senior-devops skill`, `Feat: add sentry mcp server`, `Chore: enable dark theme`.
 5. **Push** if `origin` is set and reachable. If the push fails (e.g. no GitHub access), don't retry or change remotes — tell the user the commit is local and the zip is ready.
 
 ## Removing something
 
-`setup.sh` only adds. To remove: delete the entry from the repo, uninstall it here too (`rm -rf ~/.claude/skills/<name>`, `claude plugin uninstall <plugin>`, `claude mcp remove --scope user <name>`, ...), then commit (`Chore: remove X`), rebuild the zip and push. Tell the user other PCs keep the old item until removed there.
+`setup.sh` only adds. To remove: delete the entry from the repo, uninstall it here too (`rm -rf ~/.claude/skills/<name>`, `claude plugin uninstall <plugin>`, `claude mcp remove --scope user <name>`, ...), then rebuild the zip, commit (`Chore: remove X`) and push. Tell the user other PCs keep the old item until removed there.

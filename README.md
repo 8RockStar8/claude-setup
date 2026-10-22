@@ -32,7 +32,7 @@ It's safe to run any time: installed things are skipped, and `CLAUDE.md` / `sett
 bash ~/claude-setup/pack.sh
 ```
 
-Creates `~/claude-setup/claude-setup.zip` from the latest commit (unpacks into a `claude-setup/` folder). Claude rebuilds it after every change. To install from the zip: unzip it into your home folder and run `bash ~/claude-setup/setup.sh`.
+[`claude-setup.zip`](claude-setup.zip) in this repo is always the current setup (unpacks into a `claude-setup/` folder). `pack.sh` stages all changes and rebuilds the zip so both go into the same commit; Claude runs it on every change. To install from the zip: unzip it into your home folder and run `bash ~/claude-setup/setup.sh`.
 
 ## What's inside
 
