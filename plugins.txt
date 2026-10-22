@@ -1,0 +1,2 @@
+# Plugins, one per line: plugin@marketplace (installed with --scope user)
+figma@claude-plugins-official

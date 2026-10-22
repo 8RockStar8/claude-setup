@@ -1,0 +1,23 @@
+# Skills from claude-code-templates (https://aitmpl.com), one per line: category/name
+# Installed into ~/.claude/skills/<name>
+
+development/senior-frontend
+development/senior-backend
+development/senior-architect
+development/code-reviewer
+development/skill-creator
+development/senior-prompt-engineer
+development/senior-security
+development/webapp-testing
+web-development/react-best-practices
+creative-design/ui-design-system
+creative-design/ui-ux-pro-max
+creative-design/mobile-design
+creative-design/canvas-design
+creative-design/3d-web-experience
+business-marketing/seo-optimizer
+document-processing/pdf-processing-pro
+ai-research/voice-ai-development
+ai-research/voice-agents
+enterprise-communication/twilio-communications
+media/speech
