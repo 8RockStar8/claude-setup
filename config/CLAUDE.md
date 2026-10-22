@@ -14,4 +14,4 @@ Every commit (not only "You are done") uses: `Type: short imperative description
 
 My whole Claude Code setup (skills, agents, slash commands, MCP servers, plugins, settings, this file) is kept in the `~/claude-setup` repo and installed on any PC with one command: `claude-setup`.
 
-Whenever I ask to add, change or remove anything global, also record it in `~/claude-setup`, apply it, commit, rebuild `~/claude-setup/claude-setup.zip` and push that repo — follow the `claude-setup` skill. This is my standing approval for those commits and pushes. Edit this file at `~/claude-setup/config/CLAUDE.md`, not `~/.claude/CLAUDE.md` (setup copies it over).
+Whenever I ask to add, change or remove anything global, also record it in `~/claude-setup`, apply it, commit, rebuild `~/claude-setup/claude-setup.zip` and push that repo (if the push fails, the updated zip is enough) — follow the `claude-setup` skill. This is my standing approval for those commits and pushes. Edit this file at `~/claude-setup/config/CLAUDE.md`, not `~/.claude/CLAUDE.md` (setup copies it over).

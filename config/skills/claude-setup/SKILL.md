@@ -39,7 +39,7 @@ When the user asks to add or change anything global, keep the repo in sync — t
 2. **Apply it**: `bash ~/claude-setup/setup.sh --no-pull`. Check the output shows it installed (✔) or skipped as already present (·), with no ✘.
 3. **Rebuild the zip**: `bash ~/claude-setup/pack.sh`. It stages all changes and builds `~/claude-setup/claude-setup.zip` from them (unpacks into a `claude-setup/` folder), staging the zip too. This is what the user shares or pushes to their own repo.
 4. **Commit** (change + zip together) using the `git-commit` skill style, e.g. `Feat: add senior-devops skill`, `Feat: add sentry mcp server`, `Chore: enable dark theme`.
-5. **Push** if `origin` is set and reachable. If the push fails (e.g. no GitHub access), don't retry or change remotes — tell the user the commit is local and the zip is ready.
+5. **Push** if `origin` is set and reachable. Pushing is optional: the up-to-date zip is what matters. If the push fails (e.g. no GitHub access), that's fine — don't retry, change remotes or ask for access; just mention in one line that the change is in the zip and committed locally (it goes up with the next successful push).
 
 ## Removing something
 
