@@ -10,6 +10,6 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ZIP="$REPO_DIR/claude-setup.zip"
 
 git -C "$REPO_DIR" add -A
-git -C "$REPO_DIR" archive --format=zip --prefix=claude-setup/ -o "$ZIP" "$(git -C "$REPO_DIR" write-tree)"
+git -C "$REPO_DIR" archive --worktree-attributes --format=zip --prefix=claude-setup/ -o "$ZIP" "$(git -C "$REPO_DIR" write-tree)"
 git -C "$REPO_DIR" add "$ZIP"
 echo "Created and staged $ZIP — commit to save it"
