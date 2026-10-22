@@ -6,6 +6,10 @@ When I say **"You are done"** (in any project, any wording of case/punctuation),
 
 If the commit or push fails (hooks, conflicts, rejected push), stop and tell me — don't force-push. If there is nothing to commit, just say so.
 
+## "Give me a news" → tech news brief
+
+When I say **"give me a news"** (any case/punctuation), search the web and give me a short, sourced list of the important news from the **last 10 days** about Silicon Valley, NASA, SpaceX, OpenAI, Anthropic/Claude, Tesla, Meta and other top tech newsmakers. Follow the `news` skill (`~/.claude/skills/news/SKILL.md`).
+
 ## Commit message style
 
 Every commit (not only "You are done") uses: `Type: short imperative description` — e.g. `Feat: add login form`, `Validate: login form`, `Refactor: modal component`, `Fix: ...`, `Bug: ...`. Full type list and rules are in the `git-commit` skill.
