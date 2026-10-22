@@ -26,6 +26,14 @@ claude-setup
 
 It's safe to run any time: installed things are skipped, and `CLAUDE.md` / `settings.json` are backed up to `~/.claude/backups/claude-setup/` before they change.
 
+## Share as a zip
+
+```bash
+bash ~/claude-setup/pack.sh
+```
+
+Creates `~/claude-setup/claude-setup.zip` from the latest commit (unpacks into a `claude-setup/` folder). Claude rebuilds it after every change. To install from the zip: unzip it into your home folder and run `bash ~/claude-setup/setup.sh`.
+
 ## What's inside
 
 | File | Contents |
